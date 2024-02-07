@@ -24,7 +24,6 @@ public class case3 extends polymorphism{
                     else
                     {
                         chack();
-                        
                     }
     }
 }

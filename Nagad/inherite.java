@@ -1,24 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Nagad;
 
-/**
- *
- * @author HP
- */
 import javax.swing.JOptionPane;
-public class inherite extends encapsulation {
+public class inherite extends parent {
     
     void display(){
-        name=JOptionPane.showInputDialog("Enter your account name:");
+        s=Integer.parseInt(JOptionPane.showInputDialog("Choses Your Account:\n1.Bikash\n2.Nagad\n3.Rocket\n4.Upai"));
+        switch (s) {
+            case 1 -> {name="Bikash"; break;}
+            case 2 -> {name="Nagad"; break;}
+            case 3 -> {name="Rocket"; break;}
+            case 4 -> {name="Upai"; break;}
+            default -> {{ break;}
+            }
+        }
+        
+        
         JOptionPane.showMessageDialog(null, "Welllcome to your "+name+" account");
     }
     
      void display1(){
-         num=Integer.parseInt(JOptionPane.showInputDialog(name+"\n"+"1.Case Out\n2.Send Money\n3.Mobile Recharge\n4.Payment\n5.Bill Pay\n6.My Nagad\n7.PIN Reset"));
-         
-     }
-    
+         num=Integer.parseInt(JOptionPane.showInputDialog(name+"\n"+"1.Cash Out\n2.Send Money\n3.Mobile Recharge\n4.Payment\n5.Bill Pay\n6.My "+name+"\n7.PIN Reset")); 
+    }
 }

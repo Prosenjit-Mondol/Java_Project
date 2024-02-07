@@ -12,8 +12,6 @@ import javax.swing.JOptionPane;
  */
 public class case2 extends polymorphism{
 
-    public case2() {
-    }
     @Override
     void cas(){
         number=JOptionPane.showInputDialog("Enter Received Account Number:");

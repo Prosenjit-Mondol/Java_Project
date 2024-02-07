@@ -13,6 +13,7 @@ public class Test {
         encapsulation e=new encapsulation();//object create of encapsulation
         e.setBalance(100000);
         
+        
         abstractMe ab;
         ab=new absCase7();
         
