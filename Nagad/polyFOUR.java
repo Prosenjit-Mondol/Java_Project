@@ -6,20 +6,21 @@ package Nagad;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author HP
- */
-public class case4 extends polymorphism{
+
+public class polyFOUR extends polymorphism{
     @Override
     void cas(){
          number=JOptionPane.showInputDialog("Enter Merchant A/c Number:");
                      amount=Integer.parseInt(JOptionPane.showInputDialog("Enter Amount"));
                      number2=JOptionPane.showInputDialog("Enter Counter Number:");
                      ref=JOptionPane.showInputDialog("Enter Refferance:");
-                     pin=Integer.parseInt(JOptionPane.showInputDialog("Payment\n"+"To:"+number+"\nAmount: Tk "+amount+"\nCounter :"+number2+"\nReference :"+ref+"\nEnter PIN:"));
+                     pin=Integer.parseInt(JOptionPane.showInputDialog("""
+                                                                      Payment
+                                                                      To:"""+number+"\nAmount: Tk "+amount+"\nCounter :"+number2+"\nReference :"+ref+"\nEnter PIN:"));
                     if(pin==1111)
-                    JOptionPane.showMessageDialog(null,"Payment\n"+"To: "+number+"\nAmount: Tk "+amount+"\nCounter :"+number2+"\nReference :"+ref+" was successfull.");
+                    JOptionPane.showMessageDialog(null,"""
+                                                       Payment
+                                                       To: """+number+"\nAmount: Tk "+amount+"\nCounter :"+number2+"\nReference :"+ref+" was successfull.");
                     else
                     {
                         chack();
